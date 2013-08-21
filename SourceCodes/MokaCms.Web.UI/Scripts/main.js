@@ -13,8 +13,10 @@
 					submit = true;
 					keepgoing = false;
 				} else {
-					$("body").css("background-color", "red");
-					$("#login-message").html("Username or Password was invalid");
+					$("#login-message")
+						.removeClass("alert-info")
+						.addClass("alert-error")
+						.html("Invalid Username or Password");
 				}
 				return keepgoing;
 			});

@@ -4,56 +4,62 @@
 
 <div class="container-fluid">
 	<div class="row-fluid">
-		<div class="span12">
-			<form id="login-form" class="form-horizontal" method="post" action="/account/login">
-				<div class="control-group">
-					<label class="control-label" for="username">Username</label>
-					<div class="controls">
-						<input type="text" id="username" name="username" placeholder="Username" />
-					</div>
-				</div>
-				<div class="control-group">
-					<label class="control-label" for="password">Password</label>
-					<div class="controls">
-						<input type="password" id="password" name="password" placeholder="Password" />
-					</div>
-				</div>
-				<div class="control-group">
-					<div class="controls">
-						<label class="checkbox">
-							<input type="checkbox" id="remember-me" name="remember-me" /> Remember me
-						</label>
-						<input type="submit" id="signin" name="signin" value="Sign in" />
-					</div>
-				</div>
-			</form>
+		<div class="offset4 span4">
+			<div class="row-fluid">
+				<div class="span12">
+					<form id="login-form" class="form-horizontal" method="post" action="/account/login">
+						<div class="control-group">
+							<label class="control-label" for="username">Username</label>
+							<div class="controls">
+								<input type="text" id="username" name="username" placeholder="Username" />
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="password">Password</label>
+							<div class="controls">
+								<input type="password" id="password" name="password" placeholder="Password" />
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="controls">
+								<label class="checkbox">
+									<input type="checkbox" id="remember-me" name="remember-me" /> Remember me
+								</label>
+								<input type="submit" id="signin" class="btn btn-primary" name="signin" value="Sign in" />
+							</div>
+						</div>
+					</form>
 
+				</div>
+			</div>
+
+			<div class="row-fluid">
+				<div class="span12 text-center">
+					@if (IsPost)
+					{
+						if (ViewBag.Authenticated)
+						{
+							<div id="login-message" class="alert alert-success">
+								Welcome, @Html.Raw(ViewBag.Username)!
+							</div>
+						}
+						else
+						{
+							<div id="login-message" class="alert alert-error">
+								Ooos! Try again.
+							</div>
+						}
+					}
+					else
+					{
+						<div id="login-message" class="alert alert-info">
+							Not signed in
+						</div>
+					}
+				</div>
+			</div>
 		</div>
 	</div>
-
-	@if (IsPost)
-	{
-		<div class="row-fluid">
-			<div class="span12">
-				@if (ViewBag.Authenticated)
-				{
-					<h1 id="login-message">Welcome, @Html.Raw(ViewBag.Username)!</h1>
-				}
-				else
-				{
-					<h1 id="login-message">Ooos! Try again.</h1>
-				}
-			</div>
-		</div>
-	}
-	else
-	{
-		<div class="row-fluid">
-			<div class="span12">
-				<h1 id="login-message">Not signed in</h1>
-			</div>
-		</div>
-	}
 </div>
 
 @section js

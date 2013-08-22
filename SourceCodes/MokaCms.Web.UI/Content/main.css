@@ -1,6 +1,7 @@
-﻿/* ==========================================================================
-   Chrome Frame prompt
-   ========================================================================== */
+﻿body {
+	margin-top: 60px;
+	margin-bottom: 40px;
+}
 
 .chromeframe {
 	margin: 0.2em 0;
@@ -9,7 +10,6 @@
 	padding: 0.2em 0;
 }
 
-body {
-	margin-top: 60px;
-	margin-bottom: 40px;
+.margin-top-10 {
+	margin-top: 10px;
 }

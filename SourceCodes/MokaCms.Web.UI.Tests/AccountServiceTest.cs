@@ -28,12 +28,12 @@ namespace MokaCms.Web.UI.Tests
 		[Test]
 		[TestCase("robin", "robin", true)]
 		[TestCase("patrick", "hayley", false)]
-		public void Login_GivenUsernamePassword_LoginConfirmed(string username, string password, bool authenticated)
+		public void Login_GivenUsernamePassword_LoginConfirmed(string username, string password, bool result)
 		{
 			var account = new AccountService();
-			var result = account.Login(username, password);
+			var authenticated = account.Authenticate(username, password);
 
-			Assert.AreEqual(authenticated, result);
+			Assert.AreEqual(result, authenticated);
 		}
 
 		#endregion

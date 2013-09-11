@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4F15FFF9-881C-4009-97E4-F0E3CB34C27B}</ProjectGuid>
+    <ProjectGuid>{872A2D20-E89A-4841-93D3-D15F6D3FC2A1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MokaCms.Services</RootNamespace>

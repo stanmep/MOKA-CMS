@@ -6,13 +6,22 @@ using System.Threading.Tasks;
 
 namespace MokaCms.Services
 {
+	/// <summary>
+	/// This represents the account service entity.
+	/// </summary>
 	public class AccountService
 	{
-		public bool Login(string username, string password)
+		/// <summary>
+		/// Authenticate a user by username and password.
+		/// </summary>
+		/// <param name="username">Username.</param>
+		/// <param name="password">Password.</param>
+		/// <returns>Returns <c>True</c>, if authenticated; otherwise returns <c>False</c>.</returns>
+		public bool Authenticate(string username, string password)
 		{
-			var result = username == "robin" && password == "robin";
+			var authenticated = username == "robin" && password == "robin";
 
-			return result;
+			return authenticated;
 		}
 	}
 }

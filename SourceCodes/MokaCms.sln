@@ -10,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{F06872
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MokaCms.Services", "MokaCms.Services\MokaCms.Services.csproj", "{4F15FFF9-881C-4009-97E4-F0E3CB34C27B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MokaCMS.Services", "MokaCMS.Services\MokaCMS.Services.csproj", "{872A2D20-E89A-4841-93D3-D15F6D3FC2A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

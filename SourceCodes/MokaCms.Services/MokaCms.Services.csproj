@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{872A2D20-E89A-4841-93D3-D15F6D3FC2A1}</ProjectGuid>
+    <ProjectGuid>{D3B2AC47-E758-4D52-9E3F-7AAB5E7F39EF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MokaCms.Services</RootNamespace>
@@ -41,6 +41,9 @@
   <ItemGroup>
     <Compile Include="AccountService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="XMLUserInfor.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

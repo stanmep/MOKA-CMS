@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Company>
+  <User>
+    <Username>admin</Username>
+    <Password>admin</Password>
+  </User>
+
+  <User>
+    <Username>bongmin</Username>
+    <Password>bongmin</Password>
+  </User>
+
+  <User>
+    <Username>robin</Username>
+    <Password>robin</Password>
+  </User>
+ </Company>

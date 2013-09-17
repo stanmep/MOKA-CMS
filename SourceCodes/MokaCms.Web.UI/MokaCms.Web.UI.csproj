@@ -153,7 +153,9 @@
     <Content Include="crossdomain.xml" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Models\Users.xml" />
+    <Content Include="Models\Users.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="robots.txt" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />

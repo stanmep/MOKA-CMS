@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MokaCms.Web.UI", "MokaCms.W
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MokaCms.Web.UI.Tests", "MokaCms.Web.UI.Tests\MokaCms.Web.UI.Tests.csproj", "{F8DF6051-0E09-444A-AC2C-1AD70FAC5DD0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mokacms.Services", "MokaCms.Services\Mokacms.Services.csproj", "{4EA2FAA8-9143-4EC5-8582-62E832F2021F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,10 @@ Global
 		{F8DF6051-0E09-444A-AC2C-1AD70FAC5DD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8DF6051-0E09-444A-AC2C-1AD70FAC5DD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8DF6051-0E09-444A-AC2C-1AD70FAC5DD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EA2FAA8-9143-4EC5-8582-62E832F2021F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EA2FAA8-9143-4EC5-8582-62E832F2021F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EA2FAA8-9143-4EC5-8582-62E832F2021F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EA2FAA8-9143-4EC5-8582-62E832F2021F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

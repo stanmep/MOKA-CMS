@@ -131,15 +131,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-    <ProjectReference Include="..\MokaCms.Services\MokaCms.Services.csproj">
-      <Project>{4ea2faa8-9143-4ec5-8582-62e832f2021f}</Project>
-      <Name>MokaCms.Services</Name>
-=======
     <ProjectReference Include="..\MokaCms.Services\Mokacms.Services.csproj">
-      <Project>{872a2d20-e89a-4841-93d3-d15f6d3fc2a1}</Project>
+      <Project>{4ea2faa8-9143-4ec5-8582-62e832f2021f}</Project>
       <Name>Mokacms.Services</Name>
->>>>>>> 3772518621f786f9dc89e015086e081494d14c5a
     </ProjectReference>
     <ProjectReference Include="..\MokaCms.Web.UI\MokaCms.Web.UI.csproj">
       <Project>{4B0B29BF-6FD1-4049-848B-8EE5961E63E7}</Project>

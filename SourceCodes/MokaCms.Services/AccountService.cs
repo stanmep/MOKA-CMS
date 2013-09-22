@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
+using System.Xml.Linq;
 
 namespace MokaCms.Services
 {
@@ -19,9 +21,25 @@ namespace MokaCms.Services
 		/// <returns>Returns <c>True</c>, if authenticated; otherwise returns <c>False</c>.</returns>
 		public bool Authenticate(string username, string password)
 		{
-			var authenticated = username == "robin" && password == "robin";
+		    var authenticated = false;
+		    var doc = XDocument.Load(@"C:\Users\moka\Documents\Visual Studio 2012\Projects\MOKA-CMS\Documents\XML Files\Users-justin.xml");
 
-			return authenticated;
+		    if (doc.Root == null)
+		        return false;
+
+
+            var user =
+		        doc.Root
+		            .Elements("User")
+		            .FirstOrDefault(p => 
+                        p.Element("Username").Value.ToLower() == username.ToLower() && 
+                        p.Element("Password").Value == password);
+            if (user != null)
+            
+		        authenticated = true;
+
+		    return authenticated;
+		        
 		}
 	}
 }
